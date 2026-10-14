@@ -1,0 +1,9 @@
+{
+  "model": "yolo11n-seg",
+  "ultralytics": "8.4.177",
+  "input_size": 416,
+  "source": "https://github.com/ultralytics/assets/releases",
+  "license": "https://www.ultralytics.com/license",
+  "onnx": "yolo11n-seg.onnx",
+  "sha256": "f95aeb75c5e6d38873972196e3295abfd88ae8b246c67d127496d14dd042a440"
+}

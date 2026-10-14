@@ -1,0 +1,42 @@
+%YAML:1.0
+---
+# Paths relative to this file. CPU/OpenCV Darknet detector.
+# tabletop: fast geometry for separated objects, camera looking down at a visible table.
+# yolo: COCO category recognition plus the same 3D geometry validation.
+detection_mode: "segment"
+segmentation_model: "models/yolo26n-seg.onnx"
+segmentation_names: "models/yolo26n-seg.names"
+weights: "yolov4.weights"
+model: "yolov4.cfg"
+names: "coco.names"
+output: "output"
+input_size: 416
+cpu_threads: 4
+color_width: 640
+color_height: 480
+fps: 30
+continuous: 1
+detection_interval_ms: 0
+# Keep original preprocessing by default; enable for A/B evaluation.
+letterbox: 0
+confidence: 0.35
+nms_iou: 0.45
+# Empty means all COCO classes; e.g. [ "bottle", "cup" ]. Generic boxes are not a COCO class.
+classes: []
+excluded_grasp_classes: [ "person" ]
+max_rgbd_skew_ms: 25.
+max_export_age_ms: 2000.
+min_depth_m: 0.15
+max_depth_m: 1.5
+plane_threshold_m: 0.006
+min_object_height_m: 0.008
+max_object_height_m: 0.25
+min_plane_ratio: 0.30
+min_valid_depth_ratio: 0.25
+min_object_pixels: 40
+# PLACEHOLDER, NOT a D1-T specification. Set the actual gripper limit before use.
+max_gripper_opening_m: 0.080
+finger_margin_m: 0.005
+handeye_file: ""
+robot_pose_file: ""
+pose_tolerance_ms: 100.

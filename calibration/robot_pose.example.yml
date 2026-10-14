@@ -1,0 +1,13 @@
+%YAML:1.0
+---
+# Interface for a future D1-T adapter. No robot network commands are sent by this project.
+# Write to a temporary file then rename atomically. Use the same END frame as hand-eye calibration.
+translation_unit: "m"
+clock_domain: "sdk_host_received_ms"
+host_received_ms: 0.
+stationary: 0
+T_base_end: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 1., 0., 0., 0., 0., 1., 0., 0., 0., 0., 1., 0., 0., 0., 0., 1. ]

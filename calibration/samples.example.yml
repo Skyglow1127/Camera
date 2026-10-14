@@ -1,0 +1,18 @@
+%YAML:1.0
+---
+# Board INNER corners, not squares; adjust to your physical board.
+translation_unit: "m"
+board_columns: 9
+board_rows: 6
+square_size_m: 0.025
+# Add >=8 stationary observations (15-25 recommended), rotating about multiple axes.
+# Keep the board fixed. Each T_base_end must match that snapshot's stationary pose.
+samples: []
+# Example entry (replace identity and path with real measurements):
+#   - snapshot: "../output/capture_TIMESTAMP_ID.yml"
+#     T_base_end: !!opencv-matrix
+#       rows: 4
+#       cols: 4
+#       dt: d
+#       data: [ 1.,0.,0.,0., 0.,1.,0.,0., 0.,0.,1.,0., 0.,0.,0.,1. ]
+# Alternative to snapshot: supply T_camera_target directly as a 4x4 rigid transform.

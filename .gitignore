@@ -1,0 +1,8 @@
+build/
+build-*/
+output/
+.venv-models/
+models/.ultralytics/
+*.log
+Log/
+test_artifacts/
